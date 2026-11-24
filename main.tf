@@ -6,14 +6,14 @@ terraform {
     }
   }
 }
- 
+
 provider "aws" {
   region = "ap-south-1"
 }
- 
+
 resource "aws_s3_bucket" "gitops_bucket" {
   bucket = "komal-gitops-infra-2026-unique"
- 
+
   tags = {
     Name        = "GitOps-Bucket"
     Project     = "Project-18"
